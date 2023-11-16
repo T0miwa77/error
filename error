@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "dev-comp.py", line 9, in <module>
+    ip_addr_pattern = re.compile(r'Mgmt:(\df{1,3}\.\d{1,3}\.zd{1,3}\.\d{1,3}')
+  File "/usr/lib/python3.8/re.py", line 250, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.8/re.py", line 302, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.8/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.8/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/lib/python3.8/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.8/sre_parse.py", line 836, in _parse
+    raise source.error("missing ), unterminated subpattern",
+re.error: missing ), unterminated subpattern at position 5
